@@ -1,0 +1,109 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2b2b2b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  overflow-y: auto;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.course input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #ff4747;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1;
+  overflow: hidden;
+  height: 35px;
+}
+
+#add-btn,
+#calculate-btn,
+#clear-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#result-container {
+  margin-top: 20px;
+}
+
+#total-cgpa {
+  font-weight: bold;
+}
+
+#courses-container input,
+#add-btn:hover,
+#calculate-btn:hover,
+.delete-btn:hover {
+  background-color: #444;
+}
+
+#clear-btn {
+  background-color: #ff4747;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#clear-btn:hover {
+  background-color: #d33;
+}
+
+#result-container {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .course input {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+
+  .delete-btn {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CGPA Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CGPA Calculator</h1>
+      <div id="courses-container">
+        <!-- Default courses -->
+        <div class="course">
+          <input
+            type="text"
+            placeholder="Course/Semester"
+            class="course-name"
+          />
+          <input type="number" placeholder="Credit" class="credit" />
+          <input type="number" placeholder="CGPA" class="cgpa" />
+          <button class="delete-btn" onclick="deleteCourse(this)">X</button>
+        </div>
+        <div class="course">
+          <input
+            type="text"
+            placeholder="Course/Semester"
+            class="course-name"
+          />
+          <input type="number" placeholder="Credit" class="credit" />
+          <input type="number" placeholder="CGPA" class="cgpa" />
+          <button class="delete-btn" onclick="deleteCourse(this)">X</button>
+        </div>
+        <div class="course">
+          <input
+            type="text"
+            placeholder="Course/Semester"
+            class="course-name"
+          />
+          <input type="number" placeholder="Credit" class="credit" />
+          <input type="number" placeholder="CGPA" class="cgpa" />
+          <button class="delete-btn" onclick="deleteCourse(this)">X</button>
+        </div>
+      </div>
+      <button id="add-btn" onclick="add()">+ Add</button>
+      <button id="calculate-btn" onclick="calculateCGPA()">
+        Calculate CGPA
+      </button>
+      <button id="clear-btn" onclick="clearAllData()">Clear All Data</button>
+      <div id="result-container">
+        <h3>Total CGPA:</h3>
+        <p id="total-cgpa">0.0</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
